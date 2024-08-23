@@ -1,0 +1,18 @@
+print("Calculadora Tarea #1\n")
+op = float(input("¿Cuál operacin quiere hacer? \n 1.) Suma \n 2.) Resta \n 3.) Multiplicación \n 4.) División \n"))
+a = float(input("Ingrese el primer número: \n"))
+b = float(input("Ingrese el segundo número: \n"))
+if op == 1:
+    c = a+b
+elif op == 2:
+    c = a-b
+elif op == 3:
+    c = a*b
+elif op == 4:
+    c = a/b
+try:
+    print(f"El resultado es: {c}")
+except NameError:
+    print("No existe tal operador")
+except ValueError:
+    print("Por favor ingrese un número compatible cn float")
